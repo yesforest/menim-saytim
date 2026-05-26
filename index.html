@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayselin İlk Səhifəsi</title>
+    <style>
+        body { 
+            background-color: #f0f8ff; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            /* Kartı ekranda tam mərkəzləmək üçün Flexbox: */
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .kart { 
+            border: none; /* Qalın qara xətt yerinə kölgə istifadə edirik */
+            padding: 30px; 
+            width: 320px; 
+            background: white; 
+            border-radius: 20px; 
+            /* Yumşaq kölgə effekti: */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+        }
+        
+        h1 { 
+            color: #ff4500; 
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Düymə üçün yeni stillər: */
+        button {
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 15px;
+        }
+
+        /* Siçan düymənin üzərinə gələndə: */
+        button:hover {
+            background-color: #e03d00;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kart">
+        <h1>Salam! 👋</h1>
+        <p>Mən Aysel, bu mənim ilk fərqli səhifəmdir.</p>
+        <button onclick="alert('Bura kliklədin!')">Sına</button>
+    </div>
+
+</body>
+</html>
