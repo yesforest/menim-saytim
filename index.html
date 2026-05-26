@@ -1,69 +1,81 @@
 <!DOCTYPE html>
-<html lang="az">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayselin İlk Səhifəsi</title>
+    <title>Aysel's Digital Space</title>
     <style>
         body { 
-            background-color: #f0f8ff; 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            text-align: center; 
-            /* Kartı ekranda tam mərkəzləmək üçün Flexbox: */
+            background-color: #0f172a; /* Sleek, dark tech background */
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            margin: 0;
             display: flex;
             justify-content: center;
-            align-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
         }
         
-        .kart { 
-            border: none; /* Qalın qara xətt yerinə kölgə istifadə edirik */
-            padding: 30px; 
+        .card { 
+            background: #1e293b; /* Darker grey-blue for the card */
+            padding: 35px; 
             width: 320px; 
-            background: white; 
+            text-align: center;
             border-radius: 20px; 
-            /* Yumşaq kölgə effekti: */
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+            border: 1px solid #334155; /* Subtle border to define the card */
+            animation: fadeIn 0.8s ease-out;
         }
         
         h1 { 
-            color: #ff4500; 
-            margin-bottom: 10px;
+            color: #38bdf8; /* Bright tech-blue/cyan */
+            font-size: 24px;
+            margin-bottom: 15px;
         }
 
         p {
-            color: #555;
-            font-size: 16px;
-            line-height: 1.5;
+            color: #94a3b8; /* Soft grey for readable text */
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 25px;
         }
 
-        /* Düymə üçün yeni stillər: */
+        /* Modernized Button */
         button {
-            background-color: #ff4500;
+            background: linear-gradient(135deg, #38bdf8, #0ea5e9);
             color: white;
             border: none;
-            padding: 10px 25px;
-            font-size: 16px;
-            border-radius: 25px;
+            padding: 12px 30px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 30px;
             cursor: pointer;
-            transition: background 0.3s ease;
-            margin-top: 15px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
         }
 
-        /* Siçan düymənin üzərinə gələndə: */
+        /* Interactive Hover Effects */
         button:hover {
-            background-color: #e03d00;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        /* Simple Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
 
-    <div class="kart">
-        <h1>Salam! 👋</h1>
-        <p>Mən Aysel, bu mənim ilk fərqli səhifəmdir.</p>
-        <button onclick="alert('Bura kliklədin!')">Sına</button>
+    <div class="card">
+        <h1>Hello, I'm Aysel! 👋</h1>
+        <p>I am a passionate learner exploring the world of coding and technology. Welcome to my digital space!</p>
+        <button onclick="alert('Thanks for clicking!')">Contact Me</button>
     </div>
 
 </body>
