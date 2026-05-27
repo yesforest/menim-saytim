@@ -13,4 +13,4 @@ Hi! I'm Aysel Gadirova. This repository is a collection of my web development pr
 
 ## 📬 Contact
 **Email:** ayselqedirova920@gmail.com
-**Linkedln:** Https://www.linkedin.com/in/aysel-q%C9%99dirova-583a20411
+**Linkedln:**www.linkedin.com/in/aysel-gadirova
